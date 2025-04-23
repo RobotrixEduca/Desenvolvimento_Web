@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem para Card</title>
+    <style>
+
+
+        /* Estilo básico do card */
+        .card {
+            position: relative;
+            width: 300px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Estilo da imagem do card */
+        .card-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Estilo do card de informações (inicialmente escondido) */
+        .card-info {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Estilo quando o card está visível */
+        .card.open .card-info {
+            display: block;
+        }
+
+        /* Estilo do botão de fechar */
+        #closeButton {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+        <div class="card" id="card">
+            <img src="https://via.placeholder.com/300" alt="Imagem" class="card-image" id="cardImage">
+            <div class="card-info" id="cardInfo">
+                <h2>Título do Card</h2>
+                <p>Informações adicionais sobre o card. Aqui você pode colocar qualquer conteúdo que desejar.</p>
+                <button id="closeButton">Fechar</button>
+            </div>
+        </div>
+
+
+    <script>
+        // Seleciona os elementos necessários
+        const card = document.getElementById('card');
+        const cardImage = document.getElementById('cardImage');
+        const cardInfo = document.getElementById('cardInfo');
+        const closeButton = document.getElementById('closeButton');
+
+        // Adiciona um evento de clique na imagem para abrir o card
+        cardImage.addEventListener('click', () => {
+            card.classList.add('open');
+        });
+
+        // Adiciona um evento de clique no botão de fechar para esconder o card
+        closeButton.addEventListener('click', () => {
+            card.classList.remove('open');
+        });
+
+    </script>
+</body>
+</html>

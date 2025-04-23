@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trix Location</title>
+    <link rel="shortcut icon" href="./robotrix(1).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header style="background-color: #cdcf28;">
+        <nav>
+            <div class="logo">
+                <img src="./robotrix(1).png" class="logo" alt="">
+
+
+                </div>
+  <div>
+
+            <ul>
+              <li>Robotrix Veículos</li>
+                <li><a href="#veiculos">Veículos</a></li>
+                <li><a href="#sobreNos">Sobre Nós</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="img-nav">
+        <img src="./f150.jpeg" alt="" class="img-nav">
+    </section>
+
+    <div class="image-grid" id="veiculos">
+        <div id="card1" class="card1">
+            <img src="./fiesta.jpg" alt="Imagem 1" class="image-item" id="cardImage">
+            <!-- Informações do card 1 -->
+            <div class="card-info" id="cardInfo">
+                <h2>New Fiesta</h2>
+                <h5>kjakakakak</h5>
+
+            </div>
+        </div>
+        <div id="card2" class="card2">
+            <img src="./carros/1.webp" alt="Imagem 2" class="image-item" id="cardImage2">
+            <div class="card-info" id="card2">
+                <h2>New Fiesta</h2>
+                <p>Informações adicionais sobre o card. Aqui você pode colocar qualquer conteúdo que desejar.</p>
+
+            </div>
+        </div>
+        <img src="./carros/2.1.jpg" alt="Imagem 3" class="image-item">
+        <img src="./carros/3.webp" alt="Imagem 4" class="image-item">
+        <img src="./carros/4.1.jpeg" alt="Imagem 5" class="image-item">
+        <img src="./carros/6.jpeg" alt="Imagem 6" class="image-item">
+        <img src="./carros/7.jpeg" alt="Imagem 7" class="image-item">
+        <img src="./carros/8.jpeg" alt="Imagem 8" class="image-item">
+        <img src="./carros/9.jpeg" alt="Imagem 9" class="image-item">
+        <img src="./carros/10.jpg" alt="Imagem 10" class="image-item">
+        <img src="./carros/11.jpg" alt="Imagem 11" class="image-item">
+        <img src="./carros/1.webp" alt="Imagem 12" class="image-item">
+    </div>
+
+
+     <div class="container">
+         <div class="SobreNos section" id="sobreNos">
+             <hr>
+             <a href="./index.html">
+                 <img src="./quem-somos.png" class="sobrenosimg" alt="Imagem sobre a empresa">
+             </a>
+         </div>
+
+         <div class="section">
+             <h1> Nosso Compromisso</h1>
+             <h3>
+                 Nossa empresa está comprometida em fornecer veículos de qualidade com alto padrão de segurança e tecnologia de ponta.
+                 Temos como objetivo superar as expectativas dos nossos clientes, oferecendo serviços de excelência e atendimento personalizado.
+             </h3>
+
+         </div>
+
+         <div class="section">
+             <h1>Nossos Valores</h1>
+             <h3>
+                 Valorizamos a ética, a transparência e a responsabilidade social. Acreditamos que o sucesso vem do respeito às pessoas,
+                 ao meio ambiente e ao desenvolvimento sustentável.
+             </h3>
+         </div>
+
+         <div class="section">
+             <h1>Visão</h1>
+             <h3>
+                 Ser reconhecida como a principal empresa de veículos no mercado nacional, liderando em inovação, sustentabilidade e satisfação do cliente.
+             </h3>
+         </div>
+
+         <div class="section">
+             <h1>Contribuição para Ação Social</h1>
+             <h3>
+                 Apoiamos diversas iniciativas sociais, contribuindo para o desenvolvimento de comunidades carentes e oferecendo oportunidades
+                 de educação e formação profissional para jovens de baixa renda.
+             </h3>
+         </div>
+
+         <div class="section">
+             <h1>Impacto ao Meio Ambiente</h1>
+             <h3>Estamos comprometidos em reduzir nosso impacto ambiental. Adotamos práticas sustentáveis em nossos processos de produção
+                 e investimos em tecnologias que contribuem para a redução das emissões de gases de efeito estufa e o uso consciente dos recursos naturais.
+             </h3>
+         </div>
+
+         <div class="Contatos" id="contatos">
+           <h1 class="title-contatos">Nossos Contatos</h1>
+           <h2>Telefone: +55 11 98937-3076</h2>
+           <h2>E-mail: contato@tobotrix.com.br</h2>
+           <h2>Site: www.robotrix.com.br
+             <h2>Instagram: @robotrix_educa</h2>
+           <h2>Endereço: Av. Mateo Bei, 2992 - Cidade São Mateus, São Paulo - SP, 03949-300, Brasil</h2>
+       </div>
+
+
+
+
+     <div class="footer">
+    <footer style="background-color: #000000; padding: 85px 80px">
+        <p class="copyright"<b>>© 2024 Trix Location. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Seleciona os elementos necessários
+        const card = document.querySelector('#card1');
+        const cardImage = document.querySelector('#cardImage');
+        const cardInfo = document.querySelector('#cardInfo1');
+
+        // Adiciona um evento de clique no botão de fechar para esconder o card
+        cardImage.addEventListener('click', () => {
+            if (card.classList.contains('open')) {
+                card.classList.remove('open');
+            } else {
+                card.classList.add('open');
+            }
+        });
+
+        const card2 = document.querySelector('#card1');
+        const cardImage2 = document.querySelector('#cardImage');
+
+    </script>
+</body>
+</html>

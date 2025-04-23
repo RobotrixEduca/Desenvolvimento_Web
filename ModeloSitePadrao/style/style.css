@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+   
+}
+
+header{
+
+    height: auto;
+    width: 100%;
+}
+
+.cabeca{
+    height: 80px;
+    background-image: url(../img/cert.jpg);
+    background-position: top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%
+}
+
+/* Estilo da logo */
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    width: 8%;
+}
+
+/* Estilo para a navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    width: 50%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #98c1ec;
+}
+
+/* Estilo do botão de login */
+button.login {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button.login:hover {
+    background-color: #98c1ec;
+    transition: 0.2s;
+}
+
+main{
+    height: auto;
+    background: 
+    linear-gradient(to bottom, rgba(185, 3, 3, 0) 0%, #98c1ec), /* Gradiente de transparência */
+    url(../img/cert.jpg); /* Sua imagem de fundo */
+    padding: 2%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+
+   
+}
+
+main .container{
+    display: flex;
+    background-color: rgb(27, 27, 61);
+    padding: 1%;
+    border-radius: 5px;
+    background-image: url(../img/cert.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.main-text{
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: center;
+
+}
+
+.main-text h1{
+    margin: 4%;
+    color: rgb(228, 243, 250);
+}
+
+.main-text h2{
+    color: rgb(253, 219, 67);
+}
+
+.main-text .botao{
+    margin-top: 7%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-text span{
+    color: #98c1ec;
+}
+
+.botao button{
+    padding: 3%;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    background: rgb(236,255,45);
+    background: linear-gradient(90deg, rgb(0, 153, 255) 0%, rgba(0,255,252,1) 100%);
+    color: #0e2b49
+}
+
+.botao button:hover{
+    box-shadow: rgba(48, 241, 255, 0.35) 0px 5px 15px;
+    transition: 0.3s;
+}
+.main-banner{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* INICIO DOS CARDS*/
+
+section .container{
+    width: 100%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #98c1ec;
+    gap: 20px;
+}
+
+.cards{
+    width: 25%;
+    padding: 1.5%;  
+    border-radius: 5px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+
+
+.cards img{
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.cards h3{
+    text-align: center;
+    margin-bottom: 6px;
+    color: #0e2b49;
+}
+
+.cards p{
+    text-align: justify;
+    word-spacing: -0.5px;
+    line-height: 20px;
+    font-size: 0.8rem;
+    color: #0e2b49;
+    margin-bottom: 15px;
+}
+
+.cards button{
+    padding: 2% 3%;
+    border-radius: 50px;
+    border: none;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.cor{
+    transform: translateY(-40px); /* F  az o card "subir" */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra mais forte */
+}
+
+.cor2{
+    transform: translateY(40px); /* Faz o card "subir" */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Adiciona sombra mais forte */
+}
+
+.cards button:hover{
+    background-color: #0e2b49;
+    transition: 0.3s;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.newsletter .container{
+    width: 80%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+    border: outset 1px white;
+    background-color: #98c1ec;
+    border-radius: 5px;
+}
+
+.newsletter .container .cadastrar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cadastrar h2{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #0e2b49;
+   
+}
+
+.cadastrar h2 span{
+    color: #0056b3;
+    font-size: 3rem;
+}
+
+.newsletter .container .input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 4px 20px;
+    gap: 5px;
+}
+
+.input input{
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px outset white;
+    margin: 3px 0px;
+}
+
+
+.input input:focus{
+    border-color: #007bff;
+}
+
+label{
+    font-weight: 800;
+    color: #0056b3;
+}
+
+
+/*footer*/
+
+footer{
+    width: 100%;
+    background-color: #0e2b49;
+    height: auto;
+}
+
+
+footer .container{
+    max-width: 1440px;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ul{
+    width: 23%;
+    height: 190px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+footer ul h3{
+    color: rgb(187, 186, 186);
+    margin-bottom: 9px;
+}
+
+footer ul .desc{
+    margin-bottom: 20px;
+    color: white;
+    text-align: justify;
+}
+
+footer ul li{
+    list-style: none;
+    margin: 5px 0;
+    color: white;
+}
+
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.redes{
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+
+}
+
+.redes img{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    
+}
+
+footer ul li a:hover{
+    color: #007bff;
+}
+
+.input input [type = "submit"]{
+    background-color: #007bff;
+}
+
+.menu_icon{
+    display: none;
+    z-index: 2;
+}
+
+

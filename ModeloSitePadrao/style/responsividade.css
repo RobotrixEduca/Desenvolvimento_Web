@@ -1,0 +1,82 @@
+@media(max-width:925px){
+
+    .cabeca{
+      justify-content: space-between;
+      padding: 0 5%;
+    }
+
+    .cabeca nav ul{
+       position: fixed;
+       background-color: #007bff;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       left: 100%;
+       transition: 0.3s;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .logo{
+       
+        width: 48%;
+        text-align: center;
+    }
+
+    .login{
+       
+        width: 20%;
+    }
+
+    .menu_icon{
+        display: flex;
+        width: 20%;
+        justify-content: center;
+        
+    }
+
+    .cabeca nav ul.ativo{
+        left: 0;
+       
+    }
+
+    main .container{
+       align-items: center;
+        
+    }
+
+    .main-banner{
+        height: 100%;
+        width: 50%;
+    }
+
+    .main-banner img{
+        max-width: 50%;
+        width: 100%;
+    }
+
+    .main-text{
+        font-size: 0.8rem;
+        text-align: start;
+        width: 50%;
+    }
+
+    .main-text h1{
+        margin: 0 0 10px 0;
+    }
+
+    section .container{
+        flex-direction: column;
+        padding: 15%;
+    }
+
+    .cards{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .cor, .cor2{
+        transform: none;
+    }
+}
